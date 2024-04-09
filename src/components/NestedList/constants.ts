@@ -1,1 +1,1 @@
-export const START_LEVEL = 0;
+export const START_LEVEL = 0; // Корневой отступ

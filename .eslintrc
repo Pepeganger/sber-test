@@ -1,91 +1,91 @@
-{
-	"extends": [
-		"react-app",
-		"plugin:react/recommended",
-		"plugin:@typescript-eslint/recommended",
-		"plugin:import/recommended",
-		"eslint:recommended",
-		"prettier",
-        "shared-config"
-	],
-	"plugins": [
-		"import",
-		"@typescript-eslint",
-		"prettier"
-	],
-	"parser": "@typescript-eslint/parser",
-	"root": true,
-	"rules": {
-		"max-len": [
-			"error",
-			{
-				"code": 120,
-				"comments": 120
-			}
-		],
-		"quotes": [
-			"error",
-			"single"
-		],
-		"semi": ["error", "always"],
-		"prefer-template": "error",
-		"import/order": "error",
-        "eol-last": "error",
-        "linebreak-style": ["error", "unix"],
-        "padded-blocks": ["error", "never"],
-        "indent": "error",
-		"react/jsx-curly-spacing": [
-			"error",
-			{
-				"when": "never",
-                "spacing": {
-                    "objectLiterals": "never"
-                },
-				"children": {
-					"when": "always"
-				},
-                "objectLiterals": {
-                    "when": "never"
-                },
-                "attributes": {
-                    "when": "always"
-                }
-			}
-		],
-		"import/no-unresolved": "error",
-		"object-curly-newline": [
-			"error",
-			{
-				"ImportDeclaration": {
-					"minProperties": 3,
-					"multiline": true
-				},
-				"ExportDeclaration": {
-					"minProperties": 3,
-					"multiline": true
-				},
-				"ObjectExpression": {
-					"minProperties": 3,
-					"multiline": true
-				},
-				"ObjectPattern": {
-					"multiline": true
-				}
-			}
-		]
-	},
-	"settings": {
-		"quotes": "single",
-		"import/parsers": {
-			"@typescript-eslint/parser": [
-				".ts",
-				".tsx"
-			]
-		},
-		"import/resolver": {
-			"typescript": {
-				"alwaysTryTypes": true
-			}
-		}
-	}
-}
+// {
+// 	"extends": [
+// 		"react-app",
+// 		"plugin:react/recommended",
+// 		"plugin:@typescript-eslint/recommended",
+// 		"plugin:import/recommended",
+// 		"eslint:recommended",
+// 		"prettier",
+//         "shared-config"
+// 	],
+// 	"plugins": [
+// 		"import",
+// 		"@typescript-eslint",
+// 		"prettier"
+// 	],
+// 	"parser": "@typescript-eslint/parser",
+// 	"root": true,
+// 	"rules": {
+// 		"max-len": [
+// 			"error",
+// 			{
+// 				"code": 120,
+// 				"comments": 120
+// 			}
+// 		],
+// 		"quotes": [
+// 			"error",
+// 			"single"
+// 		],
+// 		"semi": ["error", "always"],
+// 		"prefer-template": "error",
+// 		"import/order": "error",
+//         "eol-last": "error",
+//         "linebreak-style": ["error", "unix"],
+//         "padded-blocks": ["error", "never"],
+//         "indent": "error",
+// 		"react/jsx-curly-spacing": [
+// 			"error",
+// 			{
+// 				"when": "never",
+//                 "spacing": {
+//                     "objectLiterals": "never"
+//                 },
+// 				"children": {
+// 					"when": "always"
+// 				},
+//                 "objectLiterals": {
+//                     "when": "never"
+//                 },
+//                 "attributes": {
+//                     "when": "always"
+//                 }
+// 			}
+// 		],
+// 		"import/no-unresolved": "error",
+// 		"object-curly-newline": [
+// 			"error",
+// 			{
+// 				"ImportDeclaration": {
+// 					"minProperties": 3,
+// 					"multiline": true
+// 				},
+// 				"ExportDeclaration": {
+// 					"minProperties": 3,
+// 					"multiline": true
+// 				},
+// 				"ObjectExpression": {
+// 					"minProperties": 3,
+// 					"multiline": true
+// 				},
+// 				"ObjectPattern": {
+// 					"multiline": true
+// 				}
+// 			}
+// 		]
+// 	},
+// 	"settings": {
+// 		"quotes": "single",
+// 		"import/parsers": {
+// 			"@typescript-eslint/parser": [
+// 				".ts",
+// 				".tsx"
+// 			]
+// 		},
+// 		"import/resolver": {
+// 			"typescript": {
+// 				"alwaysTryTypes": true
+// 			}
+// 		}
+// 	}
+// }
