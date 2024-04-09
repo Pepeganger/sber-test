@@ -17,13 +17,21 @@ const _Person: React.FC<PersonPropsType> = ({
 }) => {
     const marginLeft = useMemo(() => getMarginLeftValue(level), [level]);
     const [toggleUser, isOpen, isLoading, children] = usePersonList(id, allUsers, setAllUsers);
+    const toggle = (id) => {
+        if (typeof toggleUser == "function") {
+            toggleUser(id)
+        }
+    }
+
+
+
     return (
         <>
             <div key={id} style={{ marginLeft }}>
                 {name} {lastName}
                 {"   "}
                 {hasChildren && (
-                    <button onClick={() => toggleUser(id)}>
+                    <button onClick={() => toggle(id)}>
                         {isOpen ? "Hide children" : "Show Children"}
                     </button>
 
@@ -35,7 +43,7 @@ const _Person: React.FC<PersonPropsType> = ({
 
             {isLoading ? <div>...Loading</div> : <div>
 
-                {isOpen && hasChildren && children.map(item => (
+                {isOpen && hasChildren && Array.isArray(children) && children.map(item => (
                     <Person
                         hasChildren={item.hasChildren}
                         name={item.name}

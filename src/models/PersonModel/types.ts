@@ -2,10 +2,10 @@ export interface PersonBaseType {
     id?: string;
     name: string;
     lastName: string;
-    level?: number;
+    level: number;
     isOpen?: boolean;
-    allUsers?: object;
-    setAllUsers?: object;
+    allUsers: any;
+    setAllUsers: any;
     isLoading?: boolean;
     hasChildren: boolean;
     children?: AnyPersonType[];

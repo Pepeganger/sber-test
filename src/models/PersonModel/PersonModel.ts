@@ -13,7 +13,7 @@ export const PersonModel = {
             isLoading: false
         }))
     },
-    getPersonId: (person: AnyPersonType): string => {
+    getPersonId: (person: any): string => {
         return `${person.name}--${person.lastName}`
     },
     formatResponse: (person: AnyPersonType): PersonBaseType => {
