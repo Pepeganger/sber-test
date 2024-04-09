@@ -1,0 +1,1 @@
+export const getMarginLeftValue = (level: number = 0) => `${level * 40}px`
